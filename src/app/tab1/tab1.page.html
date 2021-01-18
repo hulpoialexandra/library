@@ -15,6 +15,13 @@
 
 
   <ion-list id='list'>
+    <ion-item *ngFor="let item of list">
+      {{item.text}}
+      <ion-buttons slot="end">
+        <ion-button><ion-icon name="heart"></ion-icon></ion-button>
+        <ion-button><ion-icon name="cart"></ion-icon></ion-button>
+      </ion-buttons>
+    </ion-item>
   </ion-list>
 
 </ion-content>
